@@ -1,0 +1,101 @@
+Data,Produto,Categoria,Quantidade,Preço Unitário,Valor Total,Vendedor
+2025-03-23,Notebook,Eletrônicos,3,3500,10500,João
+2025-01-30,Smartphone,Eletrônicos,1,2500,2500,Ana
+2024-07-09,Monitor,Eletrônicos,1,1100,1100,Lucas
+2024-11-22,Monitor,Eletrônicos,1,1100,1100,Mariana
+2025-03-21,Teclado,Acessórios,3,120,360,Carlos
+2024-09-14,Smartphone,Eletrônicos,3,2500,7500,Fernanda
+2024-10-15,Cadeira Gamer,Móveis,5,900,4500,Mariana
+2024-11-07,Teclado,Acessórios,5,120,600,Fernanda
+2025-03-02,Pendrive,Acessórios,3,80,240,Ana
+2024-07-06,Smartphone,Eletrônicos,2,2500,5000,Carlos
+2024-09-02,Cadeira Gamer,Móveis,3,900,2700,Carlos
+2024-12-09,Tablet,Eletrônicos,1,1500,1500,Ana
+2024-10-23,Smartphone,Eletrônicos,2,2500,5000,João
+2024-04-19,Notebook,Eletrônicos,3,3500,10500,João
+2024-06-11,Smartphone,Eletrônicos,4,2500,10000,Carlos
+2024-10-01,Headset,Acessórios,4,300,1200,Mariana
+2024-07-29,Notebook,Eletrônicos,5,3500,17500,Mariana
+2024-07-23,Cadeira Gamer,Móveis,5,900,4500,Fernanda
+2024-05-14,Teclado,Acessórios,4,120,480,Ana
+2025-03-01,Mouse,Acessórios,3,50,150,Mariana
+2025-03-01,Tablet,Eletrônicos,5,1500,7500,João
+2024-10-27,Cadeira Gamer,Móveis,5,900,4500,Ana
+2024-10-06,Impressora,Periféricos,4,700,2800,Ana
+2024-10-25,Pendrive,Acessórios,5,80,400,Carlos
+2024-06-18,Tablet,Eletrônicos,3,1500,4500,Fernanda
+2024-08-23,Smartphone,Eletrônicos,3,2500,7500,Fernanda
+2024-05-05,Smartphone,Eletrônicos,5,2500,12500,Fernanda
+2024-12-28,Tablet,Eletrônicos,3,1500,4500,Lucas
+2024-12-07,Pendrive,Acessórios,5,80,400,Ana
+2024-07-20,Impressora,Periféricos,1,700,700,Ana
+2024-06-22,Mouse,Acessórios,5,50,250,Fernanda
+2024-11-29,Impressora,Periféricos,4,700,2800,Carlos
+2025-02-03,Teclado,Acessórios,4,120,480,Mariana
+2024-08-09,Mouse,Acessórios,2,50,100,Carlos
+2025-02-23,Smartphone,Eletrônicos,5,2500,12500,Ana
+2024-09-15,Monitor,Eletrônicos,1,1100,1100,Fernanda
+2024-06-22,Tablet,Eletrônicos,5,1500,7500,Ana
+2025-03-15,Mouse,Acessórios,4,50,200,Ana
+2025-01-28,Smartphone,Eletrônicos,2,2500,5000,Mariana
+2024-07-30,Smartphone,Eletrônicos,4,2500,10000,Carlos
+2024-12-27,Cadeira Gamer,Móveis,3,900,2700,Carlos
+2024-11-13,Pendrive,Acessórios,2,80,160,João
+2024-12-07,Mouse,Acessórios,1,50,50,Fernanda
+2025-02-15,Headset,Acessórios,5,300,1500,João
+2024-07-29,Monitor,Eletrônicos,1,1100,1100,Mariana
+2024-12-28,Headset,Acessórios,3,300,900,Fernanda
+2024-06-18,Mouse,Acessórios,5,50,250,João
+2024-09-02,Teclado,Acessórios,1,120,120,Lucas
+2024-10-27,Tablet,Eletrônicos,3,1500,4500,Fernanda
+2024-09-03,Smartphone,Eletrônicos,1,2500,2500,Ana
+2024-11-11,Cadeira Gamer,Móveis,5,900,4500,João
+2024-12-09,Headset,Acessórios,2,300,600,Carlos
+2024-11-29,Smartphone,Eletrônicos,4,2500,10000,Mariana
+2025-03-21,Impressora,Periféricos,5,700,3500,Fernanda
+2025-02-03,Mouse,Acessórios,5,50,250,João
+2024-11-29,Tablet,Eletrônicos,2,1500,3000,João
+2025-01-26,Tablet,Eletrônicos,3,1500,4500,Ana
+2024-11-07,Notebook,Eletrônicos,4,3500,14000,Ana
+2024-10-01,Tablet,Eletrônicos,3,1500,4500,Ana
+2025-03-03,Smartphone,Eletrônicos,2,2500,5000,Carlos
+2025-02-15,Smartphone,Eletrônicos,3,2500,7500,Mariana
+2025-03-11,Impressora,Periféricos,4,700,2800,Ana
+2024-10-29,Mouse,Acessórios,5,50,250,Mariana
+2024-12-25,Teclado,Acessórios,2,120,240,Ana
+2024-08-04,Cadeira Gamer,Móveis,1,900,900,Mariana
+2024-05-03,Impressora,Periféricos,5,700,3500,Carlos
+2024-04-17,Impressora,Periféricos,2,700,1400,Fernanda
+2024-06-30,Pendrive,Acessórios,1,80,80,Mariana
+2024-05-29,Notebook,Eletrônicos,1,3500,3500,Lucas
+2025-02-15,Pendrive,Acessórios,2,80,160,João
+2024-05-05,Mouse,Acessórios,1,50,50,Lucas
+2025-01-28,Tablet,Eletrônicos,5,1500,7500,Fernanda
+2024-09-02,Notebook,Eletrônicos,3,3500,10500,João
+2025-03-23,Smartphone,Eletrônicos,2,2500,5000,Ana
+2024-08-04,Mouse,Acessórios,1,50,50,Ana
+2024-12-25,Notebook,Eletrônicos,1,3500,3500,Lucas
+2024-10-06,Monitor,Eletrônicos,2,1100,2200,Ana
+2024-11-13,Cadeira Gamer,Móveis,1,900,900,Fernanda
+2024-04-23,Cadeira Gamer,Móveis,4,900,3600,Mariana
+2025-03-15,Impressora,Periféricos,5,700,3500,Mariana
+2024-08-09,Notebook,Eletrônicos,3,3500,10500,Lucas
+2024-12-25,Notebook,Eletrônicos,1,3500,3500,Lucas
+2024-08-09,Impressora,Periféricos,5,700,3500,Carlos
+2025-03-15,Teclado,Acessórios,4,120,480,Ana
+2024-08-11,Cadeira Gamer,Móveis,3,900,2700,Lucas
+2025-03-01,Cadeira Gamer,Móveis,4,900,3600,João
+2024-06-09,Monitor,Eletrônicos,3,1100,3300,Ana
+2025-01-28,Impressora,Periféricos,1,700,700,Mariana
+2024-11-11,Teclado,Acessórios,5,120,600,Fernanda
+2024-08-16,Smartphone,Eletrônicos,4,2500,10000,Fernanda
+2025-03-03,Notebook,Eletrônicos,5,3500,17500,Ana
+2025-02-18,Cadeira Gamer,Móveis,1,900,900,João
+2024-10-03,Cadeira Gamer,Móveis,1,900,900,João
+2024-11-22,Impressora,Periféricos,1,700,700,Fernanda
+2024-10-01,Headset,Acessórios,2,300,600,Lucas
+2025-03-02,Teclado,Acessórios,5,120,600,João
+2024-10-01,Impressora,Periféricos,3,700,2100,João
+2024-11-07,Teclado,Acessórios,4,120,480,Mariana
+2024-09-03,Headset,Acessórios,3,300,900,Ana
+2024-06-14,Notebook,Eletrônicos,5,3500,17500,Fernanda
