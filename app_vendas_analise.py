@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 st.set_page_config(page_title="Dashboard de Vendas", layout="wide")
 
@@ -13,21 +14,33 @@ base["Ano-Mes"] = base["Data"].dt.to_period("M").astype(str)
 
 # Sidebar com filtros
 st.sidebar.header("🔎 Filtros")
+categorias = st.sidebar.multiselect(
+    "Selecione as Categorias:",
+    options=base["Categoria"].unique(),
+    default=base["Categoria"].unique()  # Todas selecionadas por padrão
+)
 
-#filtro período
-periodo = sorted(base["Ano-Mes"].unique())
-periodo_selecionado = st.sidebar.selectbox("Selecione o Período:", periodo)
-
-#filtro de categorias
-categorias = sorted(base["Categoria"].unique())
-categorias_selecionadas = st.sidebar.multiselect("Escolha as categorias:",categorias)
+periodos = st.sidebar.multiselect(
+    "Selecione os Períodos:",
+    options=sorted(base["Ano-Mes"].unique()),
+    default=sorted(base["Ano-Mes"].unique())[:3]  # 3 mais recentes por padrão
+)
 
 # Aplicar filtros
 base_filtrada = base[
-    (base["Ano-Mes"] == periodo_selecionado) &
-    (base["Categoria"].isin(categorias_selecionadas))
+    (base["Categoria"].isin(categorias)) &
+    (base["Ano-Mes"].isin(periodos))
 ]
 
-# Exibir dados filtrados
-st.subheader("📋 Visualização da Tabela de Vendas Filtrada")
-st.dataframe(base_filtrada)
+# Pré-processamento CRUCIAL: Criar tabela dinâmica
+dados_grafico = base_filtrada.pivot_table(
+    index="Categoria",         # Eixo Y
+    columns="Ano-Mes",         # Eixo X 
+    values="Valor Total",      # Valores
+    aggfunc="sum"              # Soma os valores
+).fillna(0)
+
+st.subheader("📊 Vendas por Categoria e Período")
+
+# Opção 1: Gráfico de barras empilhadas (Streamlit)
+st.bar_chart(dados_grafico)
