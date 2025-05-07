@@ -26,10 +26,22 @@ periodos = st.sidebar.multiselect(
     default=sorted(base["Ano-Mes"].unique())[:3]  # 3 mais recentes por padrão
 )
 
+vendedores = st.sidebar.multiselect(
+    "Selecione os Vendedores:",
+    options=base["Vendedor"].unique(),
+    default=base["Vendedor"].unique()
+)
+
 # Aplicar filtros
 base_filtrada = base[
     (base["Categoria"].isin(categorias)) &
     (base["Ano-Mes"].isin(periodos))
+]
+
+base_filtrada_vendedor = base[
+    (base["Categoria"].isin(categorias)) &
+    (base["Ano-Mes"].isin(periodos)) &
+    (base["Vendedor"].isin(vendedores))
 ]
 
 # Pré-processamento CRUCIAL: Criar tabela dinâmica
@@ -42,5 +54,26 @@ dados_grafico = base_filtrada.pivot_table(
 
 st.subheader("📊 Vendas por Categoria e Período")
 
-# Opção 1: Gráfico de barras empilhadas (Streamlit)
+#Gráfico de barras empilhadas (Streamlit)
 st.bar_chart(dados_grafico)
+
+
+dados_grafico_vendedor = base_filtrada_vendedor.pivot_table(
+    index="Categoria",         # Eixo Y
+    columns="Ano-Mes",         # Eixo X 
+    values="Valor Total",      # Valores
+    aggfunc="sum"              # Soma os valores
+).fillna(0)
+
+st.subheader("📊 Vendas por Categoria e Período e Vendedor")
+
+st.bar_chart(dados_grafico_vendedor)
+
+total_vendido = base_filtrada["Valor Total"].sum()
+ticket_medio = total_vendido / base_filtrada["Quantidade"].sum()
+produto_top = base_filtrada.groupby("Produto")["Quantidade"].sum().idxmax()
+
+col1, col2, col3 = st.columns(3)
+col1.metric("💰 Total Vendido", f"R${total_vendido:,.2f}")
+col2.metric("🧾 Ticket Médio", f"R${ticket_medio:,.2f}")
+col3.metric("🥇 Produto + Vendido", produto_top)
